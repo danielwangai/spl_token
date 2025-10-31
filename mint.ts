@@ -18,6 +18,7 @@ const umi = createUmi("https://api.devnet.solana.com"); // Using Solana's public
 const userWallet = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(secret));
 const userWalletSigner = createSignerFromKeypair(umi, userWallet);
 
+// Token metadata
 const metadata = {
   name: "Major Token",
   symbol: "MJT",
